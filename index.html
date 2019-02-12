@@ -12,17 +12,29 @@
         body {
             -webkit-font-smoothing: antialiased;
             font-family: Helvetica Neue, Helvetica, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
-            background-image: url('bg.jpg');
-            background-repeat:no-repeat;
-            font-size: 85%;
+            background-image: url('marry.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            font-size: 100%;
             margin: 0;
+            width: 100%;
+            height: 100%;
         }
-        
+        .cover {
+            position: absolute;
+            left: 0; 
+            top: 0;
+            width: inherit;
+            height: inherit;
+            background-color:black;
+            opacity: .5;
+            z-index: -1;
+        }
         h2 {
-            font-size: 220%;
+            font-size: 240%;
             font-weight: 400;
+            color: aliceblue;
         }
-        
         .content {
             position: absolute;
             width: 100%;
@@ -30,13 +42,12 @@
             transform: translate(0, -50%);
             text-align: center;
         }
-        
         .timer {
-            font-size: 180%;
+            font-size: 200%;
             line-height: 1.5;
             margin: 1em 0;
+            color:antiquewhite;
         }
-        
         .timer b {
             color: rgb(253, 99, 125);
         }
@@ -44,6 +55,7 @@
 </head>
 
 <body>
+    <div class="cover"></div>
     <div class="content">
         <h2>琴喵儿，我们已经在一起了</h2>
         <div class="timer">
