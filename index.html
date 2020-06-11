@@ -57,7 +57,7 @@
 <body>
     <div class="cover"></div>
     <div class="content">
-        <h2>琴喵儿，我们已经在一起了</h2>
+        <h2>琴喵儿，我们在一起了</h2>
         <div class="timer">
             <b id="d"></b> Days <b id="h"></b> Hours <b id="m"></b> Minutes <b id="s"></b> Seconds
         </div>
@@ -66,7 +66,7 @@
     <script>
         function timer() {
             var start = new Date("2016/05/20 21:00:00"); 
-            var t = new Date() - start;
+            var t = new Date("2020/06/03 18:16:00") - start;
             var h = ~~(t / 1000 / 60 / 60 % 24);
             if (h < 10) {
                 h = "0" + h;
